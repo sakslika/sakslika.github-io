@@ -1,0 +1,76 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<tbody>
+		<tr>
+			<td align="center">
+			<table align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" style="font-family:Helvetica,Arial,sans-serif;font-size:12px;color:#000000" width="600">
+				<tbody>
+					
+					<tr>
+						<td align="center">
+						<table border="0" cellpadding="0" cellspacing="0" width="100%">
+							<tbody>
+								<tr>
+									<td align="center"><a data-saferedirecturl="https://www.google.com/url?q=http://news.saks.com/a/hBd2wt3AdIUrHB9zs1RNt7gS3UY/main1?EMAIL_ID%3D177402900%26REF_ID%3DEML21959TRIGTYOU923&amp;source=gmail&amp;ust=1575515152813000&amp;usg=AFQjCNGxMIigPbTFTm2M3m7-GBCDAjcxtA" href="http://news.saks.com/a/hBd2wt3AdIUrHB9zs1RNt7gS3UY/main1?EMAIL_ID=177402900&amp;REF_ID=EML21959TRIGTYOU923" target="_blank"><img id="gcimg" alt="Shop Now" border="0" class="CToWUd" src="" style="display:block" /></a></td>
+								</tr>
+								<tr>
+									<td align="center" height="100" style="
+"><a data-saferedirecturl="https://www.google.com/url?q=http://news.saks.com/a/hBZhzABAdIUrHB9c5tANsqC5TLG/main?ZZ_XDB_EMAIL_ID%3D44177785%26REF_ID%3DEML16504TRIGLAPS613&amp;source=gmail&amp;ust=1570434045504000&amp;usg=AFQjCNGfraLOxC_otrH-vuFGcHyWTaXXrQ" href="http://news.saks.com/a/hBZhzABAdIUrHB9c5tANsqC5TLG/main?ZZ_XDB_EMAIL_ID=44177785&amp;REF_ID=EML16504TRIGLAPS613" target="_blank"><img border="0" height="66" id="couponImg" src="" style="display:block" width="247" /></a></td>
+								</tr>
+								<tr>
+									<td align="center" style="font-family:Helvetica,Arial,sans-serif;font-size:16px;color:#000000;line-height:22px;"><span id="couponTxt"><br /></td>
+								</tr>
+								<tr>
+									<td align="center" style="font-family:Helvetica,Arial,sans-serif;font-size:16px;color:#000000;line-height:22px;">PIN:<span id="pin"><br />
+								</tr>
+								
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<script>
+function myFunction() {
+  var coupon = document.getElementById("myText").value;
+  document.getElementById("couponTxt").innerHTML = coupon;
+  var imgSRC = "http://www.keepautomation.com/online_barcode_generator/linear.aspx?TYPE=7&DATA="+coupon+"&PROCESS-TILDE=false&UOM=0&X=2&Y=35&ROTATE=0&RESOLUTION=72&FORMAT=gif&LEFT-MARGIN=0&RIGHT-MARGIN=0&SHOW-TEXT=true&TEXT-FONT=Arial%7c15%7cRegular";
+  document.getElementById("couponImg").src = imgSRC
+}
+</script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><script type="text/javascript">
+$(document).ready(function () {
+   e$("body").on("contextmenu",function(e){
+     return false;
+   });
+});
+
+
+
+$(document).ready(function () {
+
+	var couponValue = (new URL(location.href)).searchParams.get('index');
+	var pin = (new URL(location.href)).searchParams.get('pin');
+	var gcvalue = (new URL(location.href)).searchParams.get('value');
+	$("#pin").html(pin); 
+	//alert('sudhir here');
+	
+	
+		$("#couponTxt").html(couponValue.toString().replace(/\B(?=(\d{4})+(?!\d))/g, " "));
+		
+		var imgSRC = "http://www.keepautomation.com/online_barcode_generator/linear.aspx?TYPE=7&DATA="+couponValue+"&PROCESS-TILDE=false&UOM=0&X=2&Y=35&ROTATE=0&RESOLUTION=72&FORMAT=gif&LEFT-MARGIN=0&RIGHT-MARGIN=0&SHOW-TEXT=false&TEXT-FONT=Arial%7c15%7cRegular";
+		
+		$("#couponImg").attr("src",imgSRC);
+	
+	var gcSRC = "file:///C:/Users/15734/Desktop/BunnybuyFiles/GC-"+gcvalue+".png"
+		$("#gcimg").attr("src",gcSRC);
+	
+});
+</script></td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>
